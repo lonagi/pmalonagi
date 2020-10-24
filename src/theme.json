@@ -1,0 +1,8 @@
+{
+    "name": "Lonagi",
+    "version": "0.9",
+    "description": "Lonagi PW theme for phpMyAdmin",
+    "author": "Lonagi",
+    "url": "https://lonagi.pw/",
+    "supports": ["0.9"]
+}
