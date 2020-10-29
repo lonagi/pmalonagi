@@ -1,31 +1,30 @@
 <?php
-    // unplanned execution path
-    if (! defined('PMA_MINIMUM_COMMON') && ! defined('TESTSUITE')) {
-        exit();
-    }
+/* vim: set expandtab sw=4 ts=4 sts=4: */
+/**
+ * Styles for CodeMirror editor
+ * for the pmahomme theme
+ *
+ * @package    PhpMyAdmin-theme
+ * @subpackage PMAHomme
+ */
+
+// unplanned execution path
+if (! defined('PHPMYADMIN') && ! defined('TESTSUITE')) {
+    exit();
+}
 ?>
 
 .CodeMirror {
-    font-family: <?php echo $GLOBALS['cfg']['FontFamilyFixed']; ?> !important;
     height: <?php echo ceil($GLOBALS['cfg']['TextareaRows'] * 1.2); ?>em;
-    border: 1px solid #ccc;
     direction: ltr;
-    background: black;
-    color: #00FF00;
-}
-#pma_console .CodeMirror {
-    border: none;
-}
-.CodeMirror * {
-    font-family: <?php echo $GLOBALS['cfg']['FontFamilyFixed']; ?>;
 }
 #inline_editor_outer .CodeMirror {
     height: <?php echo ceil($GLOBALS['cfg']['TextareaRows'] * 0.4); ?>em;
-    margin-bottom: 10px;
 }
 .insertRowTable .CodeMirror {
     height: <?php echo ceil($GLOBALS['cfg']['TextareaRows'] * 0.6); ?>em;
     width: <?php echo ceil($GLOBALS['cfg']['TextareaCols'] * 0.6); ?>em;
+    border: 1px solid #a9a9a9;
 }
 #pma_console .CodeMirror-gutters {
     background-color: initial;
@@ -74,8 +73,13 @@ span.cm-number {
     margin-left: 1em;
 }
 .CodeMirror-hints {
-    z-index: 200;
+    z-index: 999;
 }
-.CodeMirror div.CodeMirror-cursor {
-    border-left: 1px solid #00FF00;
+.CodeMirror-lint-tooltip {
+    z-index: 200;
+    font-family: inherit;
+}
+.CodeMirror-lint-tooltip code {
+  font-family: monospace;
+  font-weight: bold;
 }

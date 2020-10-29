@@ -1,8 +1,18 @@
 <?php
-    // unplanned execution path
-    if (! defined('PMA_MINIMUM_COMMON') && ! defined('TESTSUITE')) {
-        exit();
-    }
+/* vim: set expandtab sw=4 ts=4 sts=4: */
+/**
+ * Styles for the resizable menus
+ *
+ * used by js/vendor/jquery/jquery.menuResizer-1.0.js
+ *
+ * @package    PhpMyAdmin-theme
+ * @subpackage PMAHomme
+ */
+
+// unplanned execution path
+if (! defined('PHPMYADMIN') && ! defined('TESTSUITE')) {
+    exit();
+}
 ?>
 ul.resizable-menu a,
 ul.resizable-menu span {
@@ -33,7 +43,7 @@ ul.resizable-menu ul {
 }
 
 ul.resizable-menu li:hover {
-    
+    <?php echo $theme->getCssGradient('ffffff', 'e5e5e5'); ?>
 }
 
 ul.resizable-menu li:hover ul,

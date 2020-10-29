@@ -1,8 +1,17 @@
 <?php
-    // unplanned execution path
-    if (! defined('PMA_MINIMUM_COMMON') && ! defined('TESTSUITE')) {
-        exit();
-    }
+/* vim: set expandtab sw=4 ts=4 sts=4: */
+/**
+ * Styles for management of Routines, Triggers and Events
+ * for the pmahomme theme
+ *
+ * @package    PhpMyAdmin-theme
+ * @subpackage PMAHomme
+ */
+
+// unplanned execution path
+if (! defined('PHPMYADMIN') && ! defined('TESTSUITE')) {
+    exit();
+}
 ?>
 
 .rte_table {
@@ -12,6 +21,10 @@
 .rte_table td {
     vertical-align: middle;
     padding: 0.2em;
+}
+
+.rte_table tr td:nth-child(1) {
+    font-weight: bold;
 }
 
 .rte_table input,
@@ -25,6 +38,7 @@
     -webkit-box-sizing: border-box;
 }
 
+.rte_table input[type=button],
 .rte_table input[type=checkbox],
 .rte_table input[type=radio] {
     width: auto;

@@ -1,8 +1,16 @@
 <?php
-    // unplanned execution path
-    if (! defined('PMA_MINIMUM_COMMON') && ! defined('TESTSUITE')) {
-        exit();
-    }
+/* vim: set expandtab sw=4 ts=4 sts=4: */
+/**
+ * ENUM editor styles for the pmahomme theme
+ *
+ * @package    PhpMyAdmin-theme
+ * @subpackage PMAHomme
+ */
+
+// unplanned execution path
+if (! defined('PHPMYADMIN') && ! defined('TESTSUITE')) {
+    exit();
+}
 ?>
 
 /**

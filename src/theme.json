@@ -1,8 +1,8 @@
 {
     "name": "Lonagi",
     "version": "0.9",
-    "description": "Lonagi PW theme for phpMyAdmin",
+    "description": "Lonagi PW retrowave theme",
     "author": "Lonagi",
     "url": "https://lonagi.pw/",
-    "supports": ["0.9"]
+    "supports": ["4.8","4.9"]
 }
